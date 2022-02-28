@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Palette -->
+    <color name="colorPrimary">#0F0326</color>
+    <color name="colorPrimaryDark">#7678ED</color>
+    <color name="colorAccent">#f18700</color>
+
+    <!-- Text Palette -->
+    <color name="textInverted">#FFFFFF</color>
+    <color name="textLightest">#4C4C4C</color>
+    <color name="textLight">#353535</color>
+    <color name="textBlack">#090909</color>
+
+    <!-- UI Palette -->
+    <color name="uiLightest">#FDFBFA</color>
+    <color name="uiLighter">#CECFCE</color>
+    <color name="uiLight">#5C5C5C</color>
+    <color name="uiGray">#2E2E2E</color>
+
+</resources>

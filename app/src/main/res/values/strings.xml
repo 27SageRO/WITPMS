@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WitPMS</string>
+    <string name="login_remember_password">Forgot your password? <font color="#FFF">Remember</font></string>
+</resources>

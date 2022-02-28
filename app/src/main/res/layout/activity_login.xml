@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wittyly.witpms.ui.activity.ActivityLogin">
+
+    <com.wittyly.witpms.ui.customviews.PixelFlowView
+        android:id="@+id/pixel_effect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wittyly.witpms.ui.customviews.CircleImageView
+            android:id="@+id/login_user_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintRight_toRightOf="@+id/login_username"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/login_username"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="@+id/login_username"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.wittyly.witpms.ui.customviews.SegoeEditText
+            android:id="@+id/login_username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@drawable/background_login_input"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/textInverted"
+            android:textColorHint="@color/textLightest"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/login_password" />
+
+        <com.wittyly.witpms.ui.customviews.SegoeEditText
+            android:id="@+id/login_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/background_login_input"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/textInverted"
+            android:textColorHint="@color/textLightest"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            app:layout_constraintVertical_bias=".48"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Sign in"
+            android:background="@drawable/background_login_round"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/textInverted"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/login_password"
+            app:layout_constraintLeft_toLeftOf="@+id/login_password"
+            app:layout_constraintRight_toRightOf="@+id/login_password" />
+
+        <TextView
+            android:id="@+id/login_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot your password? Remember"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/uiLighter"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            app:layout_constraintRight_toRightOf="@+id/login"
+            app:layout_constraintLeft_toLeftOf="@+id/login" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

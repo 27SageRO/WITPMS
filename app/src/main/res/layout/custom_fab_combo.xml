@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wittyly.witpms.ui.customviews.FabCombo
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_fab_combo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#A6FDFBFA"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:elevation="3dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="@drawable/button_fab_info"
+        android:text="Create new task"
+        android:textSize="11dp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_anchor="@+id/create_task"
+        app:layout_anchorGravity="center"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:layout_gravity="bottom|end|right"
+        app:backgroundTint="@color/textInverted"
+        app:fabSize="mini" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:elevation="3dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="@drawable/button_fab_info"
+        android:text="Create new ticket"
+        android:textSize="11dp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_anchor="@+id/create_ticket"
+        app:layout_anchorGravity="center"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:layout_gravity="bottom|end|right"
+        app:backgroundTint="@color/textInverted"
+        app:fabSize="mini"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:layout_gravity="bottom|end|right"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"/>
+
+</com.wittyly.witpms.ui.customviews.FabCombo>

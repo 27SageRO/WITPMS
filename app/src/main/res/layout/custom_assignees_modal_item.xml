@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.wittyly.witpms.ui.customviews.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/elon" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/button_assignee_remove"
+        android:layout_gravity="top|right|end"
+        android:padding="1dp"
+        app:srcCompat="@drawable/ic_x" />
+
+</FrameLayout>
